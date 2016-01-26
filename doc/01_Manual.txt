@@ -4,6 +4,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 0e031ed (Hello World!)
 =======
@@ -12,6 +13,10 @@
 >>>>>>> 514ffb7 (Hello World!)
 =======
 >>>>>>> 7469bdc (Change version to v0.2)
+=======
+=======
+>>>>>>> 0e031ed (Hello World!)
+>>>>>>> 17e797f (Hello World!)
                                                            tulizu v0.2, Okt 2017
 =======
                                                            tulizu v0.1, Feb 2016
@@ -20,11 +25,15 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 17e797f (Hello World!)
 =======
                                                            tulizu v0.2, Okt 2017
 >>>>>>> d7ee6ae (Change version to v0.2)
 =======
 >>>>>>> 0e031ed (Hello World!)
+<<<<<<< HEAD
 =======
 =======
                                                            tulizu v0.2, Okt 2017
@@ -37,6 +46,8 @@
                                                            tulizu v0.2, Okt 2017
 >>>>>>> d7ee6ae (Change version to v0.2)
 >>>>>>> 7469bdc (Change version to v0.2)
+=======
+>>>>>>> 17e797f (Hello World!)
 Index
 =======
 1- Introduction
@@ -61,6 +72,7 @@ there are ASCII-Arts included.
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 0e031ed (Hello World!)
 =======
@@ -69,6 +81,10 @@ there are ASCII-Arts included.
 >>>>>>> 514ffb7 (Hello World!)
 =======
 >>>>>>> 7469bdc (Change version to v0.2)
+=======
+=======
+>>>>>>> 0e031ed (Hello World!)
+>>>>>>> 17e797f (Hello World!)
 tulizu is shipped with a modest collection of ASCII art issue/tizu files ready
 to use for Arch Linux users and some samples for other systems.
 
@@ -83,16 +99,20 @@ You are cordially invited to include your fancy issue file to tulizu!
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 6dd8272 (Change version to v0.2)
 =======
 >>>>>>> 7469bdc (Change version to v0.2)
+=======
+>>>>>>> 17e797f (Hello World!)
 =======
 tulizu is shipped with a modest collection of ASCII art issue/tizu files ready
 to use for Arch Linux users and some samples for other systems.
 
 You are cordially invited to include your fancy issue/tizu file to tulizu!
 >>>>>>> d7ee6ae (Change version to v0.2)
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -103,6 +123,10 @@ You are cordially invited to include your fancy issue/tizu file to tulizu!
 >>>>>>> 514ffb7 (Hello World!)
 =======
 >>>>>>> 7469bdc (Change version to v0.2)
+=======
+=======
+>>>>>>> 0e031ed (Hello World!)
+>>>>>>> 17e797f (Hello World!)
 
 It's name, if it is not clear, is a quibble of 'issue tool' and is in such to be
 pronounced contracted like 'toolishoo'.
@@ -123,12 +147,17 @@ point comes tulizu in.
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 0e031ed (Hello World!)
 =======
 >>>>>>> eb6b1e0 (Manual: Add a rather detailed first session)
 =======
 >>>>>>> 514ffb7 (Hello World!)
+=======
+=======
+>>>>>>> 0e031ed (Hello World!)
+>>>>>>> 17e797f (Hello World!)
 I think there is no need to explain each command in detail. tulizu report by
 =======
 I think there is no need to explain each command in detail, tulizu report by
@@ -136,11 +165,15 @@ I think there is no need to explain each command in detail, tulizu report by
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 17e797f (Hello World!)
 =======
 I think there is no need to explain each command in detail. tulizu report by
 >>>>>>> 5075d58 (Manual: Add a rather detailed first session)
 =======
 >>>>>>> 0e031ed (Hello World!)
+<<<<<<< HEAD
 =======
 =======
 I think there is no need to explain each command in detail. tulizu report by
@@ -148,6 +181,8 @@ I think there is no need to explain each command in detail. tulizu report by
 >>>>>>> eb6b1e0 (Manual: Add a rather detailed first session)
 =======
 >>>>>>> 514ffb7 (Hello World!)
+=======
+>>>>>>> 17e797f (Hello World!)
 help command all what he knows and expect, but you find some notes below.
 
 
@@ -159,16 +194,22 @@ Run the commands 'list' to view the shipped issue files and 'install' to take
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 17e797f (Hello World!)
 =======
 >>>>>>> 5075d58 (Manual: Add a rather detailed first session)
 =======
 >>>>>>> 0e031ed (Hello World!)
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 5075d58 (Manual: Add a rather detailed first session)
 >>>>>>> eb6b1e0 (Manual: Add a rather detailed first session)
 =======
 >>>>>>> 514ffb7 (Hello World!)
+=======
+>>>>>>> 17e797f (Hello World!)
 effect, that's it. To make it easier for you, here are some steps how to get
 started: Let's assume you are looking for an Arch file...
 
@@ -209,19 +250,26 @@ trick. Have fun!
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> eb6b1e0 (Manual: Add a rather detailed first session)
+=======
+>>>>>>> 17e797f (Hello World!)
 =======
 effect, that's it.
 >>>>>>> 9c6351d (Hello World!)
 =======
 >>>>>>> 5075d58 (Manual: Add a rather detailed first session)
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 17e797f (Hello World!)
 =======
 =======
 effect, that's it.
 >>>>>>> 9c6351d (Hello World!)
 >>>>>>> 0e031ed (Hello World!)
+<<<<<<< HEAD
 =======
 >>>>>>> eb6b1e0 (Manual: Add a rather detailed first session)
 =======
@@ -229,6 +277,8 @@ effect, that's it.
 effect, that's it.
 >>>>>>> 9c6351d (Hello World!)
 >>>>>>> 514ffb7 (Hello World!)
+=======
+>>>>>>> 17e797f (Hello World!)
 
 
 3-2- Converting ASCII-Art
