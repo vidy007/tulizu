@@ -1,12 +1,18 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 0e031ed (Hello World!)
                                                            tulizu v0.2, Okt 2017
 =======
                                                            tulizu v0.1, Feb 2016
 >>>>>>> 9c6351d (Hello World!)
+<<<<<<< HEAD
 =======
                                                            tulizu v0.2, Okt 2017
 >>>>>>> d7ee6ae (Change version to v0.2)
+=======
+>>>>>>> 0e031ed (Hello World!)
 Index
 =======
 1- Introduction
@@ -27,6 +33,9 @@ there are ASCII-Arts included.
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 0e031ed (Hello World!)
 tulizu is shipped with a modest collection of ASCII art issue/tizu files ready
 to use for Arch Linux users and some samples for other systems.
 
@@ -37,12 +46,15 @@ use for Arch Linux users and as extra the famous BSD Beastie damon.
 
 You are cordially invited to include your fancy issue file to tulizu!
 >>>>>>> 9c6351d (Hello World!)
+<<<<<<< HEAD
 =======
 tulizu is shipped with a modest collection of ASCII art issue/tizu files ready
 to use for Arch Linux users and some samples for other systems.
 
 You are cordially invited to include your fancy issue/tizu file to tulizu!
 >>>>>>> d7ee6ae (Change version to v0.2)
+=======
+>>>>>>> 0e031ed (Hello World!)
 
 It's name, if it is not clear, is a quibble of 'issue tool' and is in such to be
 pronounced contracted like 'toolishoo'.
@@ -60,13 +72,19 @@ point comes tulizu in.
 ==============
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 0e031ed (Hello World!)
 I think there is no need to explain each command in detail. tulizu report by
 =======
 I think there is no need to explain each command in detail, tulizu report by
 >>>>>>> 9c6351d (Hello World!)
+<<<<<<< HEAD
 =======
 I think there is no need to explain each command in detail. tulizu report by
 >>>>>>> 5075d58 (Manual: Add a rather detailed first session)
+=======
+>>>>>>> 0e031ed (Hello World!)
 help command all what he knows and expect, but you find some notes below.
 
 
@@ -75,8 +93,11 @@ help command all what he knows and expect, but you find some notes below.
 Run the commands 'list' to view the shipped issue files and 'install' to take
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 5075d58 (Manual: Add a rather detailed first session)
+=======
+>>>>>>> 0e031ed (Hello World!)
 effect, that's it. To make it easier for you, here are some steps how to get
 started: Let's assume you are looking for an Arch file...
 
@@ -114,11 +135,17 @@ last shown. Then you run...
 Switch to some free tty. If there is no effect, logging in and out may do the
 trick. Have fun!
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 effect, that's it.
 >>>>>>> 9c6351d (Hello World!)
 =======
 >>>>>>> 5075d58 (Manual: Add a rather detailed first session)
+=======
+=======
+effect, that's it.
+>>>>>>> 9c6351d (Hello World!)
+>>>>>>> 0e031ed (Hello World!)
 
 
 3-2- Converting ASCII-Art
