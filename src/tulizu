@@ -19,10 +19,15 @@
 #   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
 #   MA 02110-1301, USA.
 
+<<<<<<< HEAD
 # shellcheck disable=SC2034  # Unused variables - See HINT at the colors
 
 declare -r myName="tulizu"
 declare -r myVersion="0.2" # Okt 2017
+=======
+declare -r myName="tulizu"
+declare -r myVersion="0.1" # Feb 2016
+>>>>>>> 9c6351d (Hello World!)
 declare -r myDescription="View and customize ASCII art included /etc/issue files"
 declare -r issuePath="/usr/share/$myName/issue"
 declare -r tizuPath="/usr/share/$myName/tizu"
@@ -34,7 +39,10 @@ declare    pattern              # Search pattern by doc and list
 
 # More about colors at Arch Wiki
 # wiki.archlinux.org/index.php/Color_Bash_Prompt
+<<<<<<< HEAD
 # HINT: shellcheck complains about most of these color declarations, but we use these indirect
+=======
+>>>>>>> 9c6351d (Hello World!)
 declare -r Normal=$'\e[0m'      # All attributes off
 declare -r Bold=$'\e[1m'        # Or bright, depend on your terminal
 declare -r UScore=$'\e[4m'      # Underscore
@@ -90,9 +98,15 @@ exitError() {
 
 checkFile() {
   if [[ -z $1 ]]; then
+<<<<<<< HEAD
     exitError "Need ${2,,} file" "${FUNCNAME[1]:3}" # $2 to lower case
   elif [[ ! -f "$1" ]]; then
     exitError "$2 file not found: $1" "${FUNCNAME[1]:3}"
+=======
+    exitError "Need ${2,,} file" ${FUNCNAME[1]:3} # $2 to lower case
+  elif [[ ! -f "$1" ]]; then
+    exitError "$2 file not found: $1" ${FUNCNAME[1]:3}
+>>>>>>> 9c6351d (Hello World!)
   fi
 }
 
@@ -111,7 +125,11 @@ parseTizuFile() {
   optCounter=()
   attributes=()
 
+<<<<<<< HEAD
   while IFS='=' read -r lhs rhs
+=======
+  while IFS='=' read lhs rhs
+>>>>>>> 9c6351d (Hello World!)
   do
     [[ -z $lhs || -z $rhs ]] && continue
     rhs="${rhs%%\#*}"             # Del in line right comments
@@ -127,7 +145,11 @@ parseTizuFile() {
       [a-z][1-9]) optDesc[${tag}]=$rhs; (( optCounter[${tag%?}]++ ))  ; ;;
     esac
 
+<<<<<<< HEAD
   done < "$inFile"
+=======
+  done < $inFile
+>>>>>>> 9c6351d (Hello World!)
 
   # Special treatment for Colors because of optional number suffix
   optCounter['c']=${#colorSets[@]}
@@ -143,10 +165,17 @@ makePattern() {
   pattern=${1:-'*'}
   # find will warn when / is in pattern
   if [[ "$pattern" =~ ^[-_.0-9a-zA-Z]*$ ]]; then
+<<<<<<< HEAD
     pattern=${pattern//./*}
     pattern="*$pattern*"
   elif [[ $pattern != '*' ]]; then
     exitError "Only letters, numbers and -._ are allowed as pattern" "${FUNCNAME[1]:3}"
+=======
+    pattern=${pattern/./*}
+    pattern="*$pattern*"
+  elif [[ $pattern != '*' ]]; then
+    exitError "Only letters, numbers and -._ are allowed as pattern" ${FUNCNAME[1]:3}
+>>>>>>> 9c6351d (Hello World!)
   fi
 }
 
@@ -159,7 +188,11 @@ cmdDoc() {
 
   makePattern "$1"
 
+<<<<<<< HEAD
   mapfile -t docMatch < <(find "$docPath" -not -type d -iname "$pattern" | sort)
+=======
+  docMatch=($(find "$docPath" -not -type d -iname "$pattern" | sort))
+>>>>>>> 9c6351d (Hello World!)
 
   if [[ ${#docMatch[@]} -gt 1 ]]; then
     print "Available documentation:"
@@ -171,10 +204,17 @@ cmdDoc() {
       then print "Give a more precise pattern than '$1' to show a file"
       else print "Give a pattern to show a file"
     fi
+<<<<<<< HEAD
   elif [[ ${#docMatch[@]} == 0 ]]; then
       print "No manual match '$1'"
   else
    less "${docMatch[0]}"
+=======
+  elif [[ -z "$docMatch" ]]; then
+      print "No manual match '$1'"
+  else
+   less "$docMatch"
+>>>>>>> 9c6351d (Hello World!)
   fi
 }
 
@@ -237,10 +277,17 @@ cmdInstall() {
 
 #   checkIfRoot
 
+<<<<<<< HEAD
   if [[ -r "$file" ]]; then
     ok=1
   else
     for path in "${searchPath[@]}"; do
+=======
+  if [[ -r $file ]]; then
+    ok=1
+  else
+    for path in ${searchPath[@]}; do
+>>>>>>> 9c6351d (Hello World!)
       local fullPath="${path}/${file}"
       if [[ -r "${fullPath}" ]]; then
         ok=1
@@ -250,17 +297,29 @@ cmdInstall() {
     done
   fi
 
+<<<<<<< HEAD
   if (( !ok )); then
+=======
+  if (( !$ok )); then
+>>>>>>> 9c6351d (Hello World!)
     exitError "File not found: $file"
   fi
 
   if [[ ! -f "/etc/issue.saved-by-$myName" ]]; then
     info "Run command: mv /etc/issue /etc/issue.saved-by-$myName"
+<<<<<<< HEAD
     sudo mv "/etc/issue" "/etc/issue.saved-by-$myName"
   fi
 
   info "Run command: cp $file /etc/issue"
   sudo cp "$file" "/etc/issue"
+=======
+    sudo mv /etc/issue /etc/issue.saved-by-$myName
+  fi
+
+  info "Run command: cp $file /etc/issue"
+  sudo cp $file /etc/issue
+>>>>>>> 9c6351d (Hello World!)
 }
 
 cmdList() {
@@ -269,10 +328,14 @@ cmdList() {
 
   makePattern "$1"
 
+<<<<<<< HEAD
   if [[ "$pattern" =~ ^\*--.*$ ]]
     then pattern="*"
     else shift
   fi
+=======
+  [[ "$pattern" =~ ^\*--.*$ ]] && pattern="*" || shift
+>>>>>>> 9c6351d (Hello World!)
 
   while [[ $# -gt 0 ]]; do
     case "$1" in
@@ -300,11 +363,19 @@ cmdList() {
     shift
   done
 
+<<<<<<< HEAD
   mapfile -t fileMatch < <(find "$issuePath" "$tizuPath" -type f -iname "$pattern" | sort)
   [[ ${#fileMatch[@]} == 0 ]] && exitError  "No file match: ${pattern:1:-1}"
 
   local fileType
 
+=======
+  local fileMatch=($(find "$issuePath" "$tizuPath" -type f -iname "$pattern" | sort))
+  local fileType
+
+  [[ -z $fileMatch ]] && exitError  "No file match: ${pattern:1:-1}"
+
+>>>>>>> 9c6351d (Hello World!)
   for file in "${fileMatch[@]}" ; do
     case $subcmd in
       file)
@@ -312,8 +383,13 @@ cmdList() {
         ;;
       info|list)
           local separator=1
+<<<<<<< HEAD
           if [[ $fileType != "${file##*.}" ]]; then
             [[ -n $fileType ]] && print
+=======
+          if [[ $fileType != ${file##*.} ]]; then
+            [[ ! -z $fileType ]] && print
+>>>>>>> 9c6351d (Hello World!)
             fileType=${file##*.}
             print "Available $fileType files:"
             unset separator
@@ -327,6 +403,7 @@ cmdList() {
 #           file="${file##*/}"
           local name=${file##*/}; name=${name%.*}
           print "  Name: $name"
+<<<<<<< HEAD
           [[ -n ${attributes['Author']} ]] && print "  Author: ${attributes['Author']}"
           [[ -n ${attributes['Desc']} ]] && print "  Desc: ${attributes['Desc']}"
           print "  File: ${file}"
@@ -339,6 +416,19 @@ cmdList() {
                   printf "  %s: %s" "$d" "${optDesc[$d]}"
                   # Translate the color-set by eval into escape codes defined at top of this file
                   IFS=" " read -r -a colors <<< "$(eval "echo ${colorSets["Colors$((i+1))"]}")"
+=======
+          [[ ! -z ${attributes['Author']} ]] && print "  Author: ${attributes['Author']}"
+          [[ ! -z ${attributes['Desc']} ]] && print "  Desc: ${attributes['Desc']}"
+          print "  File: ${file}"
+
+          for op in ${!optCounter[@]}; do
+              [[ ! -z ${optName[$op]} ]] && print "  Option $op: ${optCounter[$op]} ${optName[$op]}"
+              if [[ $op == 'c' ]]; then
+                for (( i=0; i < ${#colorSets[@]}; i++ )); do
+                  d="c$((i+1))"
+                  printf "  $d: ${optDesc[$d]}"
+                  local colors=($(eval "echo ${colorSets["Colors$((i+1))"]}"))
+>>>>>>> 9c6351d (Hello World!)
                   pattern=("foo" "bar" "baz" "raz" "faz" "taz" "haz")
                   local info=""
                   for (( j=0; j < ${#colors[@]}; j++ )); do
@@ -358,15 +448,25 @@ cmdList() {
           file="${file##*/}"
           print "  ${file%.*}"
           local ind="        "
+<<<<<<< HEAD
           [[ -n ${attributes['Desc']} ]] && print "$ind${attributes['Desc']}"
 
           for op in "${!optCounter[@]}"; do
+=======
+          [[ ! -z ${attributes['Desc']} ]] && print "$ind${attributes['Desc']}"
+
+          for op in ${!optCounter[@]}; do
+>>>>>>> 9c6351d (Hello World!)
               [[ ${optCounter[$op]} -gt 1 ]] && print "$ind$op: ${optCounter[$op]} ${optName[$op]}"
           done
           ;;
       show)
           print ">>> $file"
+<<<<<<< HEAD
           cmdShow "$file" "--nohint" "${showOpt[@]}"
+=======
+          cmdShow "$file" "--nohint" ${showOpt[@]}
+>>>>>>> 9c6351d (Hello World!)
           print "<<<"
         ;;
       *)
@@ -416,32 +516,53 @@ cmdMake() {
   parseTizuFile "$inFile"
 
   local -A useOpt
+<<<<<<< HEAD
   for op in "${!givenOpt[@]}"; do
     if [[ "${!optCounter[*]}" == *"$op"* ]]
+=======
+  for op in ${!givenOpt[@]}; do
+    if [[ "${!optCounter[@]}" == *"$op"* ]]
+>>>>>>> 9c6351d (Hello World!)
       then useOpt[$op]=${givenOpt[$op]}
       else warn "File has no option: $op"
     fi
   done
 
   # Set needed but not given options to a default of 1
+<<<<<<< HEAD
   for op in "${!optCounter[@]}"; do
     [[ -z ${useOpt[$op]}  ]] && useOpt[$op]="1"
   done
 
   # Translate the chosen color-set by eval into escape codes defined at top of this file
   IFS=" " read -r -a colors <<< "$(eval "echo ${colorSets["Colors"${useOpt['c']}]}")"
+=======
+  for op in ${!optCounter[@]}; do
+    [[ -z ${useOpt[$op]}  ]] && useOpt[$op]="1"
+  done
+
+  local colors=($(eval "echo ${colorSets["Colors"${useOpt['c']}]}"))
+>>>>>>> 9c6351d (Hello World!)
 
   if [[ $hint == "yes" ]]; then
     print "Generate file: $outFile"
     print "Use tizu file: $inFile"
     info="Use options: "
+<<<<<<< HEAD
     for op in "${!useOpt[@]}"; do
+=======
+    for op in ${!useOpt[@]}; do
+>>>>>>> 9c6351d (Hello World!)
       info="$info$op${useOpt[$op]}  "
     done
     print "$info"
 
     if [[ ${#optCounter[@]} -gt 0 ]]; then
+<<<<<<< HEAD
       for op in "${!useOpt[@]}"; do
+=======
+      for op in ${!useOpt[@]}; do
+>>>>>>> 9c6351d (Hello World!)
         info="$info$op${useOpt[$op]}  "
         print "Option $op: ${optCounter[$op]} ${optName[$op]}"
       done
@@ -456,7 +577,11 @@ cmdMake() {
   fi
 
   # Build variable sed scripts
+<<<<<<< HEAD
   for op in "${!useOpt[@]}"; do
+=======
+  for op in ${!useOpt[@]}; do
+>>>>>>> 9c6351d (Hello World!)
     [[ $op == 'c' ]] && continue # Ignore color option here
     keepOptions="s/:tu# $op${useOpt[$op]} *://g ; $keepOptions"
   done
@@ -476,9 +601,15 @@ cmdMake() {
       -e "s/:tuNC *:/$Normal/g              # No Color"                       \
       -e 's/\\/\\\\/g                       # Double all backslashes...'      \
    -r -e 's/\\\\([46bdslmnoOrtuUv])/\\\1/g  # ...but keep issue escapes'      \
+<<<<<<< HEAD
       "$inFile" > "$outFile"
 
   [[ "$show" == "yes" ]] && cmdShow "$outFile"
+=======
+      $inFile > $outFile
+
+  [[ "$show" == "yes" ]] && cmdShow $outFile
+>>>>>>> 9c6351d (Hello World!)
 }
 
 cmdRestore() {
@@ -496,14 +627,22 @@ cmdShow() {
 
   if [[ $file == *.tizu ]]; then
     [[ $hint == "yes" ]] && info "It's a .tizu file? I run 'make' for you..."
+<<<<<<< HEAD
     cmdMake "$@" --tofile "$tmpPath/$tmpFile"
+=======
+    cmdMake $@ --tofile "$tmpPath/$tmpFile"
+>>>>>>> 9c6351d (Hello World!)
     return
   fi
 
   # Do not init variables twice
   if [[ -z $escDate ]]; then
     # See manpage of agetty below 'ISSUE ESCAPES'
+<<<<<<< HEAD
     escIp4="192.168.123.45"           # \4 FIXME: Fill with non fake data
+=======
+    # TODO \4
+>>>>>>> 9c6351d (Hello World!)
     # TODO \6
     # TODO \b
     escDate=$(date +'%a %b %e %Y')    # \d FIXME: On my machine differs the real replacement
@@ -512,10 +651,14 @@ cmdShow() {
     escTTY="tty1"                     # \l FIXME: ...to show a real name
     escArch=$(uname -m)               # \m
     escHostName=$(uname -n)           # \n
+<<<<<<< HEAD
     if which hostname 2>/dev/null     # \o 'hostname -d' is not always available
       then escNISDomain=$(hostname -d)
       else escNISDomain="(none)"
     fi
+=======
+    escNISDomain=$(hostname -d)       # \o
+>>>>>>> 9c6351d (Hello World!)
     # TODO \O
     escReleaeOS=$(uname -r)           # \r
     escTime=$(date +%T)               # \t
@@ -524,10 +667,16 @@ cmdShow() {
     # TODO \v
   fi
 
+<<<<<<< HEAD
   # shellcheck disable=SC2154 # foo is referenced but not assigned - Yeah, it's in a comment as place holder
   sed -e 's/\\\\/\\/g'             \
       -e "s/$clearScreen//g"       \
       -e "s/\\\\4/$escIp4/g"       \
+=======
+  sed -e 's/\\\\/\\/g'             \
+      -e "s/$clearScreen//g"       \
+      -e "# TODO s/\\\\4/$foo/g"   \
+>>>>>>> 9c6351d (Hello World!)
       -e "# TODO s/\\\\6/$foo/g"   \
       -e "# TODO s/\\\\b/$foo/g"   \
       -e "s/\\\\d/$escDate/g"      \
@@ -542,7 +691,11 @@ cmdShow() {
       -e "s/\\\\u/$escUser/g"      \
       -e "s/\\\\U/$escUserS/g"     \
       -e "# TODO s/\\\\b/$foo/g"   \
+<<<<<<< HEAD
       "$file"
+=======
+      $file
+>>>>>>> 9c6351d (Hello World!)
 }
 
 #
@@ -550,6 +703,7 @@ cmdShow() {
 #
 cmd=$1 && shift
 case $cmd in
+<<<<<<< HEAD
   doc|d)      cmdDoc "$@"                                             ; ;;
   -h|\?|-\?)  cmdHelp                                                 ; ;;
   help|h)     cmdHelp "fullHelp"                                      ; ;;
@@ -558,6 +712,16 @@ case $cmd in
   make|m)     cmdMake "$@"                                            ; ;;
   restore|r)  cmdRestore                                              ; ;;
   show|s)     cmdShow "$@"                                            ; ;;
+=======
+  doc|d)      cmdDoc $@                                               ; ;;
+  -h|\?|-\?)  cmdHelp                                                 ; ;;
+  help|h)     cmdHelp "fullHelp"                                      ; ;;
+  install|i)  cmdInstall $@                                           ; ;;
+  list|l)     cmdList $@                                              ; ;;
+  make|m)     cmdMake $@                                              ; ;;
+  restore|r)  cmdRestore                                              ; ;;
+  show|s)     cmdShow $@                                              ; ;;
+>>>>>>> 9c6351d (Hello World!)
   '')         info "Hello! Try -h or h to get some help"              ; ;;
   *)          exitError "Unknown command '$cmd', try -h or h" '--'    ; ;;
 esac

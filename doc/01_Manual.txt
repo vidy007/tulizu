@@ -1,4 +1,8 @@
+<<<<<<< HEAD
                                                            tulizu v0.2, Okt 2017
+=======
+                                                           tulizu v0.1, Feb 2016
+>>>>>>> 9c6351d (Hello World!)
 Index
 =======
 1- Introduction
@@ -17,10 +21,17 @@ tulizu is a pure bash script to view and switch Unix issue files.
 Furthermore it may helpful at the creation process of such an issue file when
 there are ASCII-Arts included.
 
+<<<<<<< HEAD
 tulizu is shipped with a modest collection of ASCII art issue/tizu files ready
 to use for Arch Linux users and some samples for other systems.
 
 You are cordially invited to include your fancy issue/tizu file to tulizu!
+=======
+tulizu is shipped with a tiny collection of ASCII-Art issue files ready to
+use for Arch Linux users and as extra the famous BSD Beastie damon.
+
+You are cordially invited to include your fancy issue file to tulizu!
+>>>>>>> 9c6351d (Hello World!)
 
 It's name, if it is not clear, is a quibble of 'issue tool' and is in such to be
 pronounced contracted like 'toolishoo'.
@@ -36,13 +47,18 @@ point comes tulizu in.
 
 3- Use Cases
 ==============
+<<<<<<< HEAD
 I think there is no need to explain each command in detail. tulizu report by
+=======
+I think there is no need to explain each command in detail, tulizu report by
+>>>>>>> 9c6351d (Hello World!)
 help command all what he knows and expect, but you find some notes below.
 
 
 3-1- Benefit Usage
 -------------------
 Run the commands 'list' to view the shipped issue files and 'install' to take
+<<<<<<< HEAD
 effect, that's it. To make it easier for you, here are some steps how to get
 started: Let's assume you are looking for an Arch file...
 
@@ -79,6 +95,9 @@ last shown. Then you run...
 
 Switch to some free tty. If there is no effect, logging in and out may do the
 trick. Have fun!
+=======
+effect, that's it.
+>>>>>>> 9c6351d (Hello World!)
 
 
 3-2- Converting ASCII-Art
