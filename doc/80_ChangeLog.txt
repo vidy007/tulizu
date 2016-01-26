@@ -2,6 +2,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> d7ee6ae (Change version to v0.2)
 =======
@@ -10,6 +11,8 @@
 =======
 >>>>>>> d7ee6ae (Change version to v0.2)
 >>>>>>> 6dd8272 (Change version to v0.2)
+=======
+>>>>>>> 514ffb7 (Hello World!)
 2017-10-24  v0.2
 =======================================
 New: Fill \4 escape with fake data
@@ -22,6 +25,7 @@ New tizu files:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 6dd8272 (Change version to v0.2)
 =======
@@ -35,6 +39,10 @@ New tizu files:
 >>>>>>> 0e031ed (Hello World!)
 =======
 >>>>>>> 6dd8272 (Change version to v0.2)
+=======
+=======
+>>>>>>> 9c6351d (Hello World!)
+>>>>>>> 514ffb7 (Hello World!)
 2016-01-06  v0.1
 =======================================
 

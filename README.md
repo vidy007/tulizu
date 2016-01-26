@@ -12,6 +12,7 @@ there are ASCII arts included.
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 0e031ed (Hello World!)
 =======
@@ -23,8 +24,12 @@ there are ASCII arts included.
 **Last version is 0.2 released Oct, 2017**
 >>>>>>> b30b376 (Corrected spelling mistake (Okt -> Oct))
 =======
+=======
+>>>>>>> 514ffb7 (Hello World!)
 **Last version is 0.2 released Oct, 2017**
 =======
+=======
+>>>>>>> 41e24b7 (Hello World!)
 **Last version is 0.2 released Okt, 2017**
 >>>>>>> a21ccb9 (Added small variant)
 >>>>>>> 13cf5f2 (Added small variant)
@@ -68,6 +73,7 @@ You are cordially invited to include your fancy issue file to **tulizu**.
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 0b81dc6 (README: Add link to new homepage)
 =======
@@ -105,4 +111,13 @@ screenshots.
 
 >>>>>>> 0b81dc6 (README: Add link to new homepage)
 >>>>>>> 2de02fd (README: Add link to new homepage)
+=======
+
+**Last, and very first, version is 0.1 released Feb, 2016**
+
+More about **tulizu** you can find in the doc directory.
+
+### License
+>>>>>>> 9c6351d (Hello World!)
+>>>>>>> 514ffb7 (Hello World!)
 GNU General Public License (GPL), Version 2.0
