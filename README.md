@@ -16,6 +16,7 @@ there are ASCII arts included.
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 0e031ed (Hello World!)
 =======
@@ -35,6 +36,8 @@ there are ASCII arts included.
 >>>>>>> 7469bdc (Change version to v0.2)
 =======
 >>>>>>> 17e797f (Hello World!)
+=======
+>>>>>>> dbc420c (README: Add link to new homepage)
 **Last version is 0.2 released Oct, 2017**
 =======
 =======
@@ -47,6 +50,12 @@ there are ASCII arts included.
 =======
 >>>>>>> 0e031ed (Hello World!)
 >>>>>>> a100771 (Hello World!)
+=======
+=======
+>>>>>>> 0e031ed (Hello World!)
+=======
+>>>>>>> 2de02fd (README: Add link to new homepage)
+>>>>>>> 019d211 (README: Add link to new homepage)
 **Last version is 0.2 released Okt, 2017**
 >>>>>>> a21ccb9 (Added small variant)
 >>>>>>> 13cf5f2 (Added small variant)
@@ -93,8 +102,11 @@ You are cordially invited to include your fancy issue file to **tulizu**.
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 17e797f (Hello World!)
+=======
+>>>>>>> dbc420c (README: Add link to new homepage)
 =======
 >>>>>>> 0b81dc6 (README: Add link to new homepage)
 =======
@@ -113,10 +125,14 @@ screenshots.
 >>>>>>> 0b81dc6 (README: Add link to new homepage)
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> dbc420c (README: Add link to new homepage)
 =======
 =======
 >>>>>>> 0b81dc6 (README: Add link to new homepage)
 >>>>>>> 2de02fd (README: Add link to new homepage)
+<<<<<<< HEAD
 
 **Last, and very first, version is 0.1 released Feb, 2016**
 Details about **tulizu** you can find in the doc directory and on
@@ -155,13 +171,26 @@ screenshots.
 >>>>>>> 0b81dc6 (README: Add link to new homepage)
 >>>>>>> fa079a3 (README: Add link to new homepage)
 =======
+=======
+>>>>>>> dbc420c (README: Add link to new homepage)
 
 **Last, and very first, version is 0.1 released Feb, 2016**
-
-More about **tulizu** you can find in the doc directory.
+Details about **tulizu** you can find in the doc directory and on
+the [**tulizu** home page](http://loh-tar.github.io/tulizu/) with some
+screenshots.
 
 ### License
+<<<<<<< HEAD
 >>>>>>> 9c6351d (Hello World!)
+<<<<<<< HEAD
 >>>>>>> 0e031ed (Hello World!)
+<<<<<<< HEAD
 >>>>>>> 17e797f (Hello World!)
+=======
+=======
+=======
+
+>>>>>>> 0b81dc6 (README: Add link to new homepage)
+>>>>>>> 2de02fd (README: Add link to new homepage)
+>>>>>>> dbc420c (README: Add link to new homepage)
 GNU General Public License (GPL), Version 2.0
