@@ -8,8 +8,11 @@ there are ASCII arts included.
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 0e031ed (Hello World!)
+=======
+>>>>>>> 2de02fd (README: Add link to new homepage)
 **Last version is 0.2 released Okt, 2017**
 
 Details about **tulizu** you can find in the doc directory and on
@@ -50,6 +53,7 @@ use for Arch Linux users and as extra the famous BSD Beastie damon.
 You are cordially invited to include your fancy issue file to **tulizu**.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 0b81dc6 (README: Add link to new homepage)
 =======
@@ -67,12 +71,24 @@ screenshots.
 
 >>>>>>> 0b81dc6 (README: Add link to new homepage)
 =======
+=======
+=======
+>>>>>>> 0b81dc6 (README: Add link to new homepage)
+>>>>>>> 2de02fd (README: Add link to new homepage)
 
 **Last, and very first, version is 0.1 released Feb, 2016**
-
-More about **tulizu** you can find in the doc directory.
+Details about **tulizu** you can find in the doc directory and on
+the [**tulizu** home page](http://loh-tar.github.io/tulizu/) with some
+screenshots.
 
 ### License
+<<<<<<< HEAD
 >>>>>>> 9c6351d (Hello World!)
+<<<<<<< HEAD
 >>>>>>> 0e031ed (Hello World!)
+=======
+=======
+
+>>>>>>> 0b81dc6 (README: Add link to new homepage)
+>>>>>>> 2de02fd (README: Add link to new homepage)
 GNU General Public License (GPL), Version 2.0
