@@ -9,10 +9,13 @@ there are ASCII arts included.
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 0e031ed (Hello World!)
 =======
 >>>>>>> 2de02fd (README: Add link to new homepage)
+=======
+>>>>>>> 6dd8272 (Change version to v0.2)
 **Last version is 0.2 released Okt, 2017**
 
 Details about **tulizu** you can find in the doc directory and on
