@@ -17,6 +17,7 @@ there are ASCII arts included.
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 0e031ed (Hello World!)
 =======
@@ -38,6 +39,8 @@ there are ASCII arts included.
 >>>>>>> 17e797f (Hello World!)
 =======
 >>>>>>> dbc420c (README: Add link to new homepage)
+=======
+>>>>>>> 0014e33 (Change version to v0.2)
 **Last version is 0.2 released Oct, 2017**
 =======
 =======
@@ -52,10 +55,17 @@ there are ASCII arts included.
 >>>>>>> a100771 (Hello World!)
 =======
 =======
+>>>>>>> c986513 (Change version to v0.2)
+=======
 >>>>>>> 0e031ed (Hello World!)
 =======
 >>>>>>> 2de02fd (README: Add link to new homepage)
+<<<<<<< HEAD
 >>>>>>> 019d211 (README: Add link to new homepage)
+=======
+=======
+>>>>>>> 6dd8272 (Change version to v0.2)
+>>>>>>> c986513 (Change version to v0.2)
 **Last version is 0.2 released Okt, 2017**
 >>>>>>> a21ccb9 (Added small variant)
 >>>>>>> 13cf5f2 (Added small variant)

@@ -52,12 +52,17 @@ declare -r myName="tulizu"
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 6dd8272 (Change version to v0.2)
 =======
 >>>>>>> 7469bdc (Change version to v0.2)
 =======
 >>>>>>> 17e797f (Hello World!)
+=======
+=======
+>>>>>>> 6dd8272 (Change version to v0.2)
+>>>>>>> 0014e33 (Change version to v0.2)
 declare -r myVersion="0.1" # Feb 2016
 >>>>>>> 9c6351d (Hello World!)
 =======
@@ -66,12 +71,16 @@ declare -r myVersion="0.2" # Okt 2017
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 17e797f (Hello World!)
+=======
+>>>>>>> 0014e33 (Change version to v0.2)
 =======
 declare -r myVersion="0.1" # Feb 2016
 >>>>>>> 9c6351d (Hello World!)
 >>>>>>> 0e031ed (Hello World!)
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> 6dd8272 (Change version to v0.2)
@@ -83,6 +92,10 @@ declare -r myVersion="0.1" # Feb 2016
 >>>>>>> 7469bdc (Change version to v0.2)
 =======
 >>>>>>> 17e797f (Hello World!)
+=======
+=======
+>>>>>>> 6dd8272 (Change version to v0.2)
+>>>>>>> 0014e33 (Change version to v0.2)
 declare -r myDescription="View and customize ASCII art included /etc/issue files"
 declare -r issuePath="/usr/share/$myName/issue"
 declare -r tizuPath="/usr/share/$myName/tizu"
