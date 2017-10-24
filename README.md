@@ -6,6 +6,7 @@ there are ASCII arts included.
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Last version is 0.2 released Okt, 2017**
 
 Details about **tulizu** you can find in the doc directory and on
@@ -47,8 +48,10 @@ You are cordially invited to include your fancy issue file to **tulizu**.
 
 =======
 >>>>>>> 0b81dc6 (README: Add link to new homepage)
+=======
+**Last version is 0.2 released Okt, 2017**
+>>>>>>> d7ee6ae (Change version to v0.2)
 
-**Last, and very first, version is 0.1 released Feb, 2016**
 Details about **tulizu** you can find in the doc directory and on
 the [**tulizu** home page](http://loh-tar.github.io/tulizu/) with some
 screenshots.
