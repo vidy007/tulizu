@@ -3,12 +3,15 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 0e031ed (Hello World!)
 =======
 >>>>>>> 6dd8272 (Change version to v0.2)
 =======
 >>>>>>> 514ffb7 (Hello World!)
+=======
+>>>>>>> 7469bdc (Change version to v0.2)
                                                            tulizu v0.2, Okt 2017
 =======
                                                            tulizu v0.1, Feb 2016
@@ -16,6 +19,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
                                                            tulizu v0.2, Okt 2017
 >>>>>>> d7ee6ae (Change version to v0.2)
@@ -28,6 +32,11 @@
 >>>>>>> 6dd8272 (Change version to v0.2)
 =======
 >>>>>>> 514ffb7 (Hello World!)
+=======
+=======
+                                                           tulizu v0.2, Okt 2017
+>>>>>>> d7ee6ae (Change version to v0.2)
+>>>>>>> 7469bdc (Change version to v0.2)
 Index
 =======
 1- Introduction
@@ -51,12 +60,15 @@ there are ASCII-Arts included.
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 0e031ed (Hello World!)
 =======
 >>>>>>> 6dd8272 (Change version to v0.2)
 =======
 >>>>>>> 514ffb7 (Hello World!)
+=======
+>>>>>>> 7469bdc (Change version to v0.2)
 tulizu is shipped with a modest collection of ASCII art issue/tizu files ready
 to use for Arch Linux users and some samples for other systems.
 
@@ -70,8 +82,11 @@ You are cordially invited to include your fancy issue file to tulizu!
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 6dd8272 (Change version to v0.2)
+=======
+>>>>>>> 7469bdc (Change version to v0.2)
 =======
 tulizu is shipped with a modest collection of ASCII art issue/tizu files ready
 to use for Arch Linux users and some samples for other systems.
@@ -79,12 +94,15 @@ to use for Arch Linux users and some samples for other systems.
 You are cordially invited to include your fancy issue/tizu file to tulizu!
 >>>>>>> d7ee6ae (Change version to v0.2)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 0e031ed (Hello World!)
 =======
 >>>>>>> 6dd8272 (Change version to v0.2)
 =======
 >>>>>>> 514ffb7 (Hello World!)
+=======
+>>>>>>> 7469bdc (Change version to v0.2)
 
 It's name, if it is not clear, is a quibble of 'issue tool' and is in such to be
 pronounced contracted like 'toolishoo'.
