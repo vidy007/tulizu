@@ -977,26 +977,37 @@ cmdShow() {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> b1db20d (Check if 'hostname' command is available)
 =======
 >>>>>>> 0e031ed (Hello World!)
+=======
+=======
+>>>>>>> b1db20d (Check if 'hostname' command is available)
+>>>>>>> 45440dc (Check if 'hostname' command is available)
     if which hostname 2>/dev/null     # \o 'hostname -d' is not always available
       then escNISDomain=$(hostname -d)
       else escNISDomain="(none)"
     fi
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 45440dc (Check if 'hostname' command is available)
 =======
     escNISDomain=$(hostname -d)       # \o
 >>>>>>> 9c6351d (Hello World!)
 =======
 >>>>>>> b1db20d (Check if 'hostname' command is available)
+<<<<<<< HEAD
 =======
 =======
     escNISDomain=$(hostname -d)       # \o
 >>>>>>> 9c6351d (Hello World!)
 >>>>>>> 0e031ed (Hello World!)
+=======
+>>>>>>> 45440dc (Check if 'hostname' command is available)
     # TODO \O
     escReleaeOS=$(uname -r)           # \r
     escTime=$(date +%T)               # \t
