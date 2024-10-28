@@ -269,10 +269,15 @@ makePattern() {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 72bdb0d (Fix/improve wildcards in search pattern)
 =======
 >>>>>>> 0e031ed (Hello World!)
+=======
+=======
+>>>>>>> 72bdb0d (Fix/improve wildcards in search pattern)
+>>>>>>> 116c4c2 (Fix/improve wildcards in search pattern)
     pattern=${pattern//./*}
     pattern="*$pattern*"
   elif [[ $pattern != '*' ]]; then
