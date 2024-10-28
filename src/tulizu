@@ -20,6 +20,9 @@
 #   MA 02110-1301, USA.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> cd26f70 (Changes suggested by shellcheck)
 # shellcheck disable=SC2034  # Unused variables - See HINT at the colors
 
 declare -r myName="tulizu"
@@ -44,9 +47,13 @@ declare    pattern              # Search pattern by doc and list
 # More about colors at Arch Wiki
 # wiki.archlinux.org/index.php/Color_Bash_Prompt
 <<<<<<< HEAD
+<<<<<<< HEAD
 # HINT: shellcheck complains about most of these color declarations, but we use these indirect
 =======
 >>>>>>> 9c6351d (Hello World!)
+=======
+# HINT: shellcheck complains about most of these color declarations, but we use these indirect
+>>>>>>> cd26f70 (Changes suggested by shellcheck)
 declare -r Normal=$'\e[0m'      # All attributes off
 declare -r Bold=$'\e[1m'        # Or bright, depend on your terminal
 declare -r UScore=$'\e[4m'      # Underscore
@@ -103,6 +110,7 @@ exitError() {
 checkFile() {
   if [[ -z $1 ]]; then
 <<<<<<< HEAD
+<<<<<<< HEAD
     exitError "Need ${2,,} file" "${FUNCNAME[1]:3}" # $2 to lower case
   elif [[ ! -f "$1" ]]; then
     exitError "$2 file not found: $1" "${FUNCNAME[1]:3}"
@@ -111,6 +119,11 @@ checkFile() {
   elif [[ ! -f "$1" ]]; then
     exitError "$2 file not found: $1" ${FUNCNAME[1]:3}
 >>>>>>> 9c6351d (Hello World!)
+=======
+    exitError "Need ${2,,} file" "${FUNCNAME[1]:3}" # $2 to lower case
+  elif [[ ! -f "$1" ]]; then
+    exitError "$2 file not found: $1" "${FUNCNAME[1]:3}"
+>>>>>>> cd26f70 (Changes suggested by shellcheck)
   fi
 }
 
@@ -130,10 +143,14 @@ parseTizuFile() {
   attributes=()
 
 <<<<<<< HEAD
+<<<<<<< HEAD
   while IFS='=' read -r lhs rhs
 =======
   while IFS='=' read lhs rhs
 >>>>>>> 9c6351d (Hello World!)
+=======
+  while IFS='=' read -r lhs rhs
+>>>>>>> cd26f70 (Changes suggested by shellcheck)
   do
     [[ -z $lhs || -z $rhs ]] && continue
     rhs="${rhs%%\#*}"             # Del in line right comments
@@ -150,10 +167,14 @@ parseTizuFile() {
     esac
 
 <<<<<<< HEAD
+<<<<<<< HEAD
   done < "$inFile"
 =======
   done < $inFile
 >>>>>>> 9c6351d (Hello World!)
+=======
+  done < "$inFile"
+>>>>>>> cd26f70 (Changes suggested by shellcheck)
 
   # Special treatment for Colors because of optional number suffix
   optCounter['c']=${#colorSets[@]}
@@ -178,8 +199,12 @@ makePattern() {
     pattern=${pattern/./*}
     pattern="*$pattern*"
   elif [[ $pattern != '*' ]]; then
+<<<<<<< HEAD
     exitError "Only letters, numbers and -._ are allowed as pattern" ${FUNCNAME[1]:3}
 >>>>>>> 9c6351d (Hello World!)
+=======
+    exitError "Only letters, numbers and -._ are allowed as pattern" "${FUNCNAME[1]:3}"
+>>>>>>> cd26f70 (Changes suggested by shellcheck)
   fi
 }
 
@@ -193,10 +218,14 @@ cmdDoc() {
   makePattern "$1"
 
 <<<<<<< HEAD
+<<<<<<< HEAD
   mapfile -t docMatch < <(find "$docPath" -not -type d -iname "$pattern" | sort)
 =======
   docMatch=($(find "$docPath" -not -type d -iname "$pattern" | sort))
 >>>>>>> 9c6351d (Hello World!)
+=======
+  mapfile -t docMatch < <(find "$docPath" -not -type d -iname "$pattern" | sort)
+>>>>>>> cd26f70 (Changes suggested by shellcheck)
 
   if [[ ${#docMatch[@]} -gt 1 ]]; then
     print "Available documentation:"
@@ -209,6 +238,7 @@ cmdDoc() {
       else print "Give a pattern to show a file"
     fi
 <<<<<<< HEAD
+<<<<<<< HEAD
   elif [[ ${#docMatch[@]} == 0 ]]; then
       print "No manual match '$1'"
   else
@@ -219,6 +249,12 @@ cmdDoc() {
   else
    less "$docMatch"
 >>>>>>> 9c6351d (Hello World!)
+=======
+  elif [[ ${#docMatch[@]} == 0 ]]; then
+      print "No manual match '$1'"
+  else
+   less "${docMatch[0]}"
+>>>>>>> cd26f70 (Changes suggested by shellcheck)
   fi
 }
 
@@ -282,6 +318,7 @@ cmdInstall() {
 #   checkIfRoot
 
 <<<<<<< HEAD
+<<<<<<< HEAD
   if [[ -r "$file" ]]; then
     ok=1
   else
@@ -292,6 +329,12 @@ cmdInstall() {
   else
     for path in ${searchPath[@]}; do
 >>>>>>> 9c6351d (Hello World!)
+=======
+  if [[ -r "$file" ]]; then
+    ok=1
+  else
+    for path in "${searchPath[@]}"; do
+>>>>>>> cd26f70 (Changes suggested by shellcheck)
       local fullPath="${path}/${file}"
       if [[ -r "${fullPath}" ]]; then
         ok=1
@@ -302,15 +345,20 @@ cmdInstall() {
   fi
 
 <<<<<<< HEAD
+<<<<<<< HEAD
   if (( !ok )); then
 =======
   if (( !$ok )); then
 >>>>>>> 9c6351d (Hello World!)
+=======
+  if (( !ok )); then
+>>>>>>> cd26f70 (Changes suggested by shellcheck)
     exitError "File not found: $file"
   fi
 
   if [[ ! -f "/etc/issue.saved-by-$myName" ]]; then
     info "Run command: mv /etc/issue /etc/issue.saved-by-$myName"
+<<<<<<< HEAD
 <<<<<<< HEAD
     sudo mv "/etc/issue" "/etc/issue.saved-by-$myName"
   fi
@@ -324,6 +372,13 @@ cmdInstall() {
   info "Run command: cp $file /etc/issue"
   sudo cp $file /etc/issue
 >>>>>>> 9c6351d (Hello World!)
+=======
+    sudo mv "/etc/issue" "/etc/issue.saved-by-$myName"
+  fi
+
+  info "Run command: cp $file /etc/issue"
+  sudo cp "$file" "/etc/issue"
+>>>>>>> cd26f70 (Changes suggested by shellcheck)
 }
 
 cmdList() {
@@ -333,13 +388,19 @@ cmdList() {
   makePattern "$1"
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> cd26f70 (Changes suggested by shellcheck)
   if [[ "$pattern" =~ ^\*--.*$ ]]
     then pattern="*"
     else shift
   fi
+<<<<<<< HEAD
 =======
   [[ "$pattern" =~ ^\*--.*$ ]] && pattern="*" || shift
 >>>>>>> 9c6351d (Hello World!)
+=======
+>>>>>>> cd26f70 (Changes suggested by shellcheck)
 
   while [[ $# -gt 0 ]]; do
     case "$1" in
@@ -368,6 +429,7 @@ cmdList() {
   done
 
 <<<<<<< HEAD
+<<<<<<< HEAD
   mapfile -t fileMatch < <(find "$issuePath" "$tizuPath" -type f -iname "$pattern" | sort)
   [[ ${#fileMatch[@]} == 0 ]] && exitError  "No file match: ${pattern:1:-1}"
 
@@ -376,8 +438,12 @@ cmdList() {
 =======
   local fileMatch=($(find "$issuePath" "$tizuPath" -type f -iname "$pattern" | sort))
   local fileType
+=======
+  mapfile -t fileMatch < <(find "$issuePath" "$tizuPath" -type f -iname "$pattern" | sort)
+  [[ ${#fileMatch[@]} == 0 ]] && exitError  "No file match: ${pattern:1:-1}"
+>>>>>>> cd26f70 (Changes suggested by shellcheck)
 
-  [[ -z $fileMatch ]] && exitError  "No file match: ${pattern:1:-1}"
+  local fileType
 
 >>>>>>> 9c6351d (Hello World!)
   for file in "${fileMatch[@]}" ; do
@@ -388,12 +454,17 @@ cmdList() {
       info|list)
           local separator=1
 <<<<<<< HEAD
+<<<<<<< HEAD
           if [[ $fileType != "${file##*.}" ]]; then
             [[ -n $fileType ]] && print
 =======
           if [[ $fileType != ${file##*.} ]]; then
             [[ ! -z $fileType ]] && print
 >>>>>>> 9c6351d (Hello World!)
+=======
+          if [[ $fileType != "${file##*.}" ]]; then
+            [[ -n $fileType ]] && print
+>>>>>>> cd26f70 (Changes suggested by shellcheck)
             fileType=${file##*.}
             print "Available $fileType files:"
             unset separator
@@ -407,6 +478,7 @@ cmdList() {
 #           file="${file##*/}"
           local name=${file##*/}; name=${name%.*}
           print "  Name: $name"
+<<<<<<< HEAD
 <<<<<<< HEAD
           [[ -n ${attributes['Author']} ]] && print "  Author: ${attributes['Author']}"
           [[ -n ${attributes['Desc']} ]] && print "  Desc: ${attributes['Desc']}"
@@ -423,16 +495,26 @@ cmdList() {
 =======
           [[ ! -z ${attributes['Author']} ]] && print "  Author: ${attributes['Author']}"
           [[ ! -z ${attributes['Desc']} ]] && print "  Desc: ${attributes['Desc']}"
+=======
+          [[ -n ${attributes['Author']} ]] && print "  Author: ${attributes['Author']}"
+          [[ -n ${attributes['Desc']} ]] && print "  Desc: ${attributes['Desc']}"
+>>>>>>> cd26f70 (Changes suggested by shellcheck)
           print "  File: ${file}"
 
-          for op in ${!optCounter[@]}; do
-              [[ ! -z ${optName[$op]} ]] && print "  Option $op: ${optCounter[$op]} ${optName[$op]}"
+          for op in "${!optCounter[@]}"; do
+              [[ -n ${optName[$op]} ]] && print "  Option $op: ${optCounter[$op]} ${optName[$op]}"
               if [[ $op == 'c' ]]; then
                 for (( i=0; i < ${#colorSets[@]}; i++ )); do
                   d="c$((i+1))"
+<<<<<<< HEAD
                   printf "  $d: ${optDesc[$d]}"
                   local colors=($(eval "echo ${colorSets["Colors$((i+1))"]}"))
 >>>>>>> 9c6351d (Hello World!)
+=======
+                  printf "  %s: %s" "$d" "${optDesc[$d]}"
+                  # Translate the color-set by eval into escape codes defined at top of this file
+                  IFS=" " read -r -a colors <<< "$(eval "echo ${colorSets["Colors$((i+1))"]}")"
+>>>>>>> cd26f70 (Changes suggested by shellcheck)
                   pattern=("foo" "bar" "baz" "raz" "faz" "taz" "haz")
                   local info=""
                   for (( j=0; j < ${#colors[@]}; j++ )); do
@@ -453,6 +535,7 @@ cmdList() {
           print "  ${file%.*}"
           local ind="        "
 <<<<<<< HEAD
+<<<<<<< HEAD
           [[ -n ${attributes['Desc']} ]] && print "$ind${attributes['Desc']}"
 
           for op in "${!optCounter[@]}"; do
@@ -461,16 +544,25 @@ cmdList() {
 
           for op in ${!optCounter[@]}; do
 >>>>>>> 9c6351d (Hello World!)
+=======
+          [[ -n ${attributes['Desc']} ]] && print "$ind${attributes['Desc']}"
+
+          for op in "${!optCounter[@]}"; do
+>>>>>>> cd26f70 (Changes suggested by shellcheck)
               [[ ${optCounter[$op]} -gt 1 ]] && print "$ind$op: ${optCounter[$op]} ${optName[$op]}"
           done
           ;;
       show)
           print ">>> $file"
 <<<<<<< HEAD
+<<<<<<< HEAD
           cmdShow "$file" "--nohint" "${showOpt[@]}"
 =======
           cmdShow "$file" "--nohint" ${showOpt[@]}
 >>>>>>> 9c6351d (Hello World!)
+=======
+          cmdShow "$file" "--nohint" "${showOpt[@]}"
+>>>>>>> cd26f70 (Changes suggested by shellcheck)
           print "<<<"
         ;;
       *)
@@ -521,18 +613,24 @@ cmdMake() {
 
   local -A useOpt
 <<<<<<< HEAD
+<<<<<<< HEAD
   for op in "${!givenOpt[@]}"; do
     if [[ "${!optCounter[*]}" == *"$op"* ]]
 =======
   for op in ${!givenOpt[@]}; do
     if [[ "${!optCounter[@]}" == *"$op"* ]]
 >>>>>>> 9c6351d (Hello World!)
+=======
+  for op in "${!givenOpt[@]}"; do
+    if [[ "${!optCounter[*]}" == *"$op"* ]]
+>>>>>>> cd26f70 (Changes suggested by shellcheck)
       then useOpt[$op]=${givenOpt[$op]}
       else warn "File has no option: $op"
     fi
   done
 
   # Set needed but not given options to a default of 1
+<<<<<<< HEAD
 <<<<<<< HEAD
   for op in "${!optCounter[@]}"; do
     [[ -z ${useOpt[$op]}  ]] && useOpt[$op]="1"
@@ -547,26 +645,42 @@ cmdMake() {
 
   local colors=($(eval "echo ${colorSets["Colors"${useOpt['c']}]}"))
 >>>>>>> 9c6351d (Hello World!)
+=======
+  for op in "${!optCounter[@]}"; do
+    [[ -z ${useOpt[$op]}  ]] && useOpt[$op]="1"
+  done
+
+  # Translate the chosen color-set by eval into escape codes defined at top of this file
+  IFS=" " read -r -a colors <<< "$(eval "echo ${colorSets["Colors"${useOpt['c']}]}")"
+>>>>>>> cd26f70 (Changes suggested by shellcheck)
 
   if [[ $hint == "yes" ]]; then
     print "Generate file: $outFile"
     print "Use tizu file: $inFile"
     info="Use options: "
 <<<<<<< HEAD
+<<<<<<< HEAD
     for op in "${!useOpt[@]}"; do
 =======
     for op in ${!useOpt[@]}; do
 >>>>>>> 9c6351d (Hello World!)
+=======
+    for op in "${!useOpt[@]}"; do
+>>>>>>> cd26f70 (Changes suggested by shellcheck)
       info="$info$op${useOpt[$op]}  "
     done
     print "$info"
 
     if [[ ${#optCounter[@]} -gt 0 ]]; then
 <<<<<<< HEAD
+<<<<<<< HEAD
       for op in "${!useOpt[@]}"; do
 =======
       for op in ${!useOpt[@]}; do
 >>>>>>> 9c6351d (Hello World!)
+=======
+      for op in "${!useOpt[@]}"; do
+>>>>>>> cd26f70 (Changes suggested by shellcheck)
         info="$info$op${useOpt[$op]}  "
         print "Option $op: ${optCounter[$op]} ${optName[$op]}"
       done
@@ -582,10 +696,14 @@ cmdMake() {
 
   # Build variable sed scripts
 <<<<<<< HEAD
+<<<<<<< HEAD
   for op in "${!useOpt[@]}"; do
 =======
   for op in ${!useOpt[@]}; do
 >>>>>>> 9c6351d (Hello World!)
+=======
+  for op in "${!useOpt[@]}"; do
+>>>>>>> cd26f70 (Changes suggested by shellcheck)
     [[ $op == 'c' ]] && continue # Ignore color option here
     keepOptions="s/:tu# $op${useOpt[$op]} *://g ; $keepOptions"
   done
@@ -606,6 +724,7 @@ cmdMake() {
       -e 's/\\/\\\\/g                       # Double all backslashes...'      \
    -r -e 's/\\\\([46bdslmnoOrtuUv])/\\\1/g  # ...but keep issue escapes'      \
 <<<<<<< HEAD
+<<<<<<< HEAD
       "$inFile" > "$outFile"
 
   [[ "$show" == "yes" ]] && cmdShow "$outFile"
@@ -614,6 +733,11 @@ cmdMake() {
 
   [[ "$show" == "yes" ]] && cmdShow $outFile
 >>>>>>> 9c6351d (Hello World!)
+=======
+      "$inFile" > "$outFile"
+
+  [[ "$show" == "yes" ]] && cmdShow "$outFile"
+>>>>>>> cd26f70 (Changes suggested by shellcheck)
 }
 
 cmdRestore() {
@@ -632,10 +756,14 @@ cmdShow() {
   if [[ $file == *.tizu ]]; then
     [[ $hint == "yes" ]] && info "It's a .tizu file? I run 'make' for you..."
 <<<<<<< HEAD
+<<<<<<< HEAD
     cmdMake "$@" --tofile "$tmpPath/$tmpFile"
 =======
     cmdMake $@ --tofile "$tmpPath/$tmpFile"
 >>>>>>> 9c6351d (Hello World!)
+=======
+    cmdMake "$@" --tofile "$tmpPath/$tmpFile"
+>>>>>>> cd26f70 (Changes suggested by shellcheck)
     return
   fi
 
@@ -682,6 +810,9 @@ cmdShow() {
   fi
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> cd26f70 (Changes suggested by shellcheck)
   # shellcheck disable=SC2154 # foo is referenced but not assigned - Yeah, it's in a comment as place holder
   sed -e 's/\\\\/\\/g'             \
       -e "s/$clearScreen//g"       \
@@ -710,10 +841,14 @@ cmdShow() {
       -e "s/\\\\U/$escUserS/g"     \
       -e "# TODO s/\\\\b/$foo/g"   \
 <<<<<<< HEAD
+<<<<<<< HEAD
       "$file"
 =======
       $file
 >>>>>>> 9c6351d (Hello World!)
+=======
+      "$file"
+>>>>>>> cd26f70 (Changes suggested by shellcheck)
 }
 
 #
@@ -721,6 +856,7 @@ cmdShow() {
 #
 cmd=$1 && shift
 case $cmd in
+<<<<<<< HEAD
 <<<<<<< HEAD
   doc|d)      cmdDoc "$@"                                             ; ;;
   -h|\?|-\?)  cmdHelp                                                 ; ;;
@@ -732,14 +868,21 @@ case $cmd in
   show|s)     cmdShow "$@"                                            ; ;;
 =======
   doc|d)      cmdDoc $@                                               ; ;;
+=======
+  doc|d)      cmdDoc "$@"                                             ; ;;
+>>>>>>> cd26f70 (Changes suggested by shellcheck)
   -h|\?|-\?)  cmdHelp                                                 ; ;;
   help|h)     cmdHelp "fullHelp"                                      ; ;;
-  install|i)  cmdInstall $@                                           ; ;;
-  list|l)     cmdList $@                                              ; ;;
-  make|m)     cmdMake $@                                              ; ;;
+  install|i)  cmdInstall "$@"                                         ; ;;
+  list|l)     cmdList "$@"                                            ; ;;
+  make|m)     cmdMake "$@"                                            ; ;;
   restore|r)  cmdRestore                                              ; ;;
+<<<<<<< HEAD
   show|s)     cmdShow $@                                              ; ;;
 >>>>>>> 9c6351d (Hello World!)
+=======
+  show|s)     cmdShow "$@"                                            ; ;;
+>>>>>>> cd26f70 (Changes suggested by shellcheck)
   '')         info "Hello! Try -h or h to get some help"              ; ;;
   *)          exitError "Unknown command '$cmd', try -h or h" '--'    ; ;;
 esac
