@@ -91,18 +91,27 @@ point comes tulizu in.
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 0e031ed (Hello World!)
+=======
+>>>>>>> eb6b1e0 (Manual: Add a rather detailed first session)
 I think there is no need to explain each command in detail. tulizu report by
 =======
 I think there is no need to explain each command in detail, tulizu report by
 >>>>>>> 9c6351d (Hello World!)
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 I think there is no need to explain each command in detail. tulizu report by
 >>>>>>> 5075d58 (Manual: Add a rather detailed first session)
 =======
 >>>>>>> 0e031ed (Hello World!)
+=======
+=======
+I think there is no need to explain each command in detail. tulizu report by
+>>>>>>> 5075d58 (Manual: Add a rather detailed first session)
+>>>>>>> eb6b1e0 (Manual: Add a rather detailed first session)
 help command all what he knows and expect, but you find some notes below.
 
 
@@ -112,10 +121,15 @@ Run the commands 'list' to view the shipped issue files and 'install' to take
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 5075d58 (Manual: Add a rather detailed first session)
 =======
 >>>>>>> 0e031ed (Hello World!)
+=======
+=======
+>>>>>>> 5075d58 (Manual: Add a rather detailed first session)
+>>>>>>> eb6b1e0 (Manual: Add a rather detailed first session)
 effect, that's it. To make it easier for you, here are some steps how to get
 started: Let's assume you are looking for an Arch file...
 
@@ -154,16 +168,22 @@ Switch to some free tty. If there is no effect, logging in and out may do the
 trick. Have fun!
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> eb6b1e0 (Manual: Add a rather detailed first session)
 =======
 effect, that's it.
 >>>>>>> 9c6351d (Hello World!)
 =======
 >>>>>>> 5075d58 (Manual: Add a rather detailed first session)
+<<<<<<< HEAD
 =======
 =======
 effect, that's it.
 >>>>>>> 9c6351d (Hello World!)
 >>>>>>> 0e031ed (Hello World!)
+=======
+>>>>>>> eb6b1e0 (Manual: Add a rather detailed first session)
 
 
 3-2- Converting ASCII-Art
