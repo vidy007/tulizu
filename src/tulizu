@@ -191,6 +191,9 @@ makePattern() {
   # find will warn when / is in pattern
   if [[ "$pattern" =~ ^[-_.0-9a-zA-Z]*$ ]]; then
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 72bdb0d (Fix/improve wildcards in search pattern)
     pattern=${pattern//./*}
     pattern="*$pattern*"
   elif [[ $pattern != '*' ]]; then
