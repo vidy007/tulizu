@@ -13,8 +13,11 @@ But you could of cause chose any other, not here listed, issue if you like.
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 0e031ed (Hello World!)
+=======
+>>>>>>> 3693529 (ToDo: get rid of hard coded sudo)
 H: The use of sudo is currently hard coded, but not every one use/has sudo
 H: While the Makefile support DESTDIR as usual, is an other install path than
    the default one not possible. That's also bad while hacking on tulizu. Would
@@ -26,12 +29,15 @@ H: While the Makefile support DESTDIR as usual, is an other install path than
 =======
 H: The use of sudo is currently hard coded, but not every one use/has sudo
 >>>>>>> e6f0710 (ToDo: get rid of hard coded sudo)
+<<<<<<< HEAD
 =======
 >>>>>>> 1cc01b2 (ToDo: Support other install path than the default)
 =======
 =======
 >>>>>>> 9c6351d (Hello World!)
 >>>>>>> 0e031ed (Hello World!)
+=======
+>>>>>>> 3693529 (ToDo: get rid of hard coded sudo)
 H: parseTizuFile() Add checks not to overwrite known data, exitError if so
 M: parseTizuFile() Add checks to avoid gaps in (option/color) numbering, fix
    them automaticly?
