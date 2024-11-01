@@ -10,6 +10,7 @@ there are ASCII arts included.
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 0e031ed (Hello World!)
 =======
@@ -17,6 +18,9 @@ there are ASCII arts included.
 =======
 >>>>>>> 6dd8272 (Change version to v0.2)
 **Last version is 0.2 released Okt, 2017**
+=======
+**Last version is 0.2 released Oct, 2017**
+>>>>>>> b30b376 (Corrected spelling mistake (Okt -> Oct))
 
 Details about **tulizu** you can find in the doc directory and on
 the [**tulizu** home page](http://loh-tar.github.io/tulizu/) with some
